@@ -9,3 +9,7 @@ In a Nuxt layer environment, VueUse's composables are not found in the sublayer 
 3. Navigate to the index page, e.g. `localhost:3000/`
 
 Nuxt will display a 500 error that `useMousePressed is not defined`, referring to the use of `useMousePressed()` in `./base/pages/index.vue`
+
+## Contrasting example
+
+The `nuxt-lodash` module is also installed in the base layer. By disabling the code in `./base/pages/index.vue` pertaining to VueUse and running a dev server for the sublayer, the relevant Lodash function can be seen properly working
